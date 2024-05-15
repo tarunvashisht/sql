@@ -60,12 +60,16 @@ I diagramed the following four tables:
 ![01_farmers_market_logical_model_partial.png](./images/01_farmers_market_logical_model_partial.png)
 
 
+
+
 Your task: choose two tables and create a logical data model. There are lots of tools you can do this (including drawing this by hand), but I'd recommend [Draw.io](https://www.drawio.com/) or [LucidChart](https://www.lucidchart.com/pages/). 
 
 A logical data model must contain:
 - table name
 - column names
 - relationship type
+- 
+![Screenshot 2024-05-15 at 6 09 56 PM](https://github.com/tarunvashisht/sql/assets/167667529/5a37fd07-24d5-4516-855f-f471e284403e)
 
 Please do not pick the exact same tables that I have already diagramed. For example, you shouldn't diagram the relationship between `product` and `product_category`, but you could diagram `product` and `customer_purchases`.
 
