@@ -8,8 +8,8 @@
 1. Write a query that determines how many times each vendor has rented a booth at the farmer’s market by counting the vendor booth assignments per `vendor_id`.
 */
     Select vba.vendor_id , v.vendor_name, count(vba.booth_number) 
-    from vendor_booth_assignments as vba
-    inner join vendor as v on v.vendor_id =  vba.vendor_id
+    from vendor as v
+    LEFT  join vendor_booth_assignments as vba  on v.vendor_id =  vba.vendor_id
     group by vba.vendor_id
 /*
 2. The Farmer’s Market Customer Appreciation Committee wants to give a bumper sticker to everyone who has ever spent more than $2000 at the market. Write a query that generates a list of customers for them to give stickers to, sorted by last name, then first name. 
