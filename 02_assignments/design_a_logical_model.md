@@ -19,6 +19,7 @@ We want to create employee shifts, splitting up the day into morning and evening
 The store wants to keep customer addresses. Propose two architectures for the CUSTOMER_ADDRESS table, one that will retain changes, and another that will overwrite. Which is type 1, which is type 2?
 
 _Hint, search type 1 vs type 2 slowly changing dimensions._
+<img width="681" alt="Screenshot 2024-05-30 at 2 30 02 PM" src="https://github.com/tarunvashisht/sql/assets/167667529/4bc4fc75-e011-4b74-a4cd-44e9adec37bb">
 
 Bonus: Are there privacy implications to this, why or why not?
 ```
