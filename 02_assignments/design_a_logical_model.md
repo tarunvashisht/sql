@@ -4,20 +4,30 @@
 Create a logical model for a small bookstore. 📚
 
 At the minimum it should have employee, order, sales, customer, and book entities (tables). Determine sensible column and table design based on what you know about these concepts. Keep it simple, but work out sensible relationships to keep tables reasonably sized. Include a date table. There are several tools online you can use, I'd recommend [_Draw.io_](https://www.drawio.com/) or [_LucidChart_](https://www.lucidchart.com/pages/).
+<img width="681" alt="Logical diagram" src="https://github.com/tarunvashisht/sql/assets/167667529/3758c785-564a-4ff6-ad9d-809f94eeaa42">
+
+
 
 ## Question 2
 We want to create employee shifts, splitting up the day into morning and evening. Add this to the ERD.
+
+<img width="681" alt="Screenshot 2024-05-30 at 2 13 35 PM" src="https://github.com/tarunvashisht/sql/assets/167667529/2f700e0c-083a-4a1f-b4c5-e6a5ab535071">
+
+
 
 ## Question 3
 The store wants to keep customer addresses. Propose two architectures for the CUSTOMER_ADDRESS table, one that will retain changes, and another that will overwrite. Which is type 1, which is type 2?
 
 _Hint, search type 1 vs type 2 slowly changing dimensions._
+<img width="681" alt="Screenshot 2024-05-30 at 2 30 02 PM" src="https://github.com/tarunvashisht/sql/assets/167667529/4bc4fc75-e011-4b74-a4cd-44e9adec37bb">
 
 Bonus: Are there privacy implications to this, why or why not?
 ```
 Your answer...
 ```
+Both types has security concerns. SCD-1 we don't have historical data. So no historical reporting could be done from there. One item which is over-written by new version, can't be recovered again. 
 
+SCD-2- keeps the track of historical records which raises concerns about privacy risks and data governance.
 ## Question 4
 Review the AdventureWorks Schema [here](https://i.stack.imgur.com/LMu4W.gif)
 
@@ -25,6 +35,12 @@ Highlight at least two differences between it and your ERD. Would you change any
 ```
 Your answer...
 ```
+
+1. AdventureWorks database schema is more comprehensive and detailed as compared to what we designed. 
+2. Relationships between different table entities are well defined with proper logging and tracking of table entries. 
+3. Star and snowflake schema is properly defined in adventureworks
+4. The AdventureWorks schema is relatively complex, featuring multiple interconnected tables representing various aspects of a business's operations.
+
 
 # Criteria
 
