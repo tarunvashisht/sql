@@ -36,6 +36,11 @@ Highlight at least two differences between it and your ERD. Would you change any
 Your answer...
 ```
 
+#AdventureWorks database schema is more comprehensive and detailed as compared to what we designed. 
+#Relationships between different table entities are well defined with proper logging and tracking of table entries. 
+#Star and snowflake schema is properly defined in adventureworks
+#
+
 # Criteria
 
 [Assignment Rubric](./assignment_rubric.md)
