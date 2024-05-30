@@ -25,7 +25,9 @@ Bonus: Are there privacy implications to this, why or why not?
 ```
 Your answer...
 ```
+Both types has security concerns. SCD-1 we don't have historical data. So no historical reporting could be done from there. One item which is over-written by new version, can't be recovered again. 
 
+SCD-2- keeps the track of historical records which raises concerns about privacy risks and data governance.
 ## Question 4
 Review the AdventureWorks Schema [here](https://i.stack.imgur.com/LMu4W.gif)
 
